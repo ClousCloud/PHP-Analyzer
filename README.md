@@ -30,11 +30,7 @@ To use the PHP Analyzer, you can add it directly to your GitHub Actions workflow
 
    on:
      push:
-       branches:
-         - main
      pull_request:
-       branches:
-         - main
 
    jobs:
      analyze:
@@ -45,7 +41,7 @@ To use the PHP Analyzer, you can add it directly to your GitHub Actions workflow
            uses: actions/checkout@v3
 
          - name: Run PHP Analyzer
-           uses: ClousCloud/PHP-Analyzer@v1 # Use the PHP Analyzer action from the ClousCloud repository
+           uses: ClousCloud/PHP-Analyzer@v1.1.1 # Use the PHP Analyzer action from the ClousCloud repository
            with:
              directory: 'src' # Directory containing PHP files to analyze
    
