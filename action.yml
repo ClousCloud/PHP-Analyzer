@@ -12,7 +12,7 @@ runs:
   image: 'docker://php:8.1-cli'
   entrypoint: 'php'
   args:
-    - /analyzer.php
+    - analyzer.php
     - ${{ inputs.directory }}
 
 branding:
