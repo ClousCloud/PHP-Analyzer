@@ -1,4 +1,4 @@
-name: 'PHP Analyzer'
+name: 'SPHPS Analyzer'
 description: 'A custom PHP static analyzer without Composer'
 author: 'ClousCloud'
 inputs:
