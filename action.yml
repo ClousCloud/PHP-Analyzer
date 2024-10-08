@@ -1,8 +1,6 @@
-name: 'SPHPS Analyzer'
-description: 'A custom PHP static analyzer without Composer'
-branding:
-  icon: 'code'
-  color: 'blue'
+# action.yml
+name: 'PHP Analyzer'
+description: 'A custom PHP static analyzer without Composer, with extended features'
 author: 'ClousCloud'
 inputs:
   directory:
@@ -11,8 +9,12 @@ inputs:
     default: './src'
 runs:
   using: 'docker'
-  image: 'php:8.1-cli'
+  image: 'docker://php:8.1-cli'
   entrypoint: 'php'
   args:
     - /github/workspace/analyzer.php
     - ${{ inputs.directory }}
+
+branding:
+  icon: 'code'
+  color: 'blue'
