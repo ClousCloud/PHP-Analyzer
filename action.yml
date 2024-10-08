@@ -1,7 +1,8 @@
 name: 'SPHPS Analyzer'
 description: 'A custom PHP static analyzer without Composer'
-icon: 'alert-circle'
-color: 'blue'
+branding:
+  icon: 'alert-circle'
+  color: 'blue'
 author: 'ClousCloud'
 inputs:
   directory:
